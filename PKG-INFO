@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: EUtils
+Version: 1.0p1
+Summary: Client interface to NCBI's EUtils/Entrez server
+Home-page: http://www.dalkescientific.com/EUtils/
+Author: Dalke Scientific Software, LLC
+Author-email: dalke@dalkescientific.com
+License: UNKNOWN
+Description: EUtils is a client library for the Entrez databases at NCBI.
+        
+        NCBI provides the EUtils web service so that software can query Entrez
+        directly, rather than going through the web interface and dealing with
+        the hassles of web scraping.  For more information see
+        
+        http://www.ncbi.nlm.nih.gov/entrez/query/static/eutils_help.html
+        
+        This package provides two levels of interface.  The lowest one makes a
+        programmatic interface to construct the query URL and make the
+        request.  The higher level ones support history tracking and parsing
+        of query results.  These greatly simplify working with the EUtils
+        server.
+        
+Platform: UNKNOWN

@@ -1,0 +1,18 @@
+<!--    
+                This is the Current DTD for Entrez eSummary
+$Id: eSummary_020511.dtd,v 1.5 2002/11/06 16:11:49 olegh Exp $
+-->
+<!-- ================================================================= -->
+
+<!ELEMENT       Id              (#PCDATA)>		<!-- \d+ -->
+<!ELEMENT       Item        	(#PCDATA|Item)* >	<!-- .+ -->
+<!ATTLIST Item
+    Name CDATA                         #REQUIRED
+    Type (Integer|Date|String|List|Unknown) #REQUIRED
+>
+
+<!ELEMENT        ERROR          (#PCDATA)>		<!-- .+ -->
+
+<!ELEMENT        DocSum         (Id, Item+)>
+
+<!ELEMENT        eSummaryResult    (DocSum*|ERROR?)>
