@@ -54,6 +54,7 @@ databases.NUCLEOTIDE = _add_db(DatabaseInfo("nucleotide", SEQUENCE_TYPE))
 databases.PROTEIN = _add_db(DatabaseInfo("protein", SEQUENCE_TYPE))
 databases.POPSET = _add_db(DatabaseInfo("popset", SEQUENCE_TYPE))
 databases.SEQUENCES = _add_db(DatabaseInfo("sequences", SEQUENCE_TYPE))
+databases.GEODATASET = _add_db(DatabaseInfo("gds", SEQUENCE_TYPE))
 
 
 # Someday I want to make it easier to get a given format.  I would

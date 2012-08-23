@@ -78,9 +78,9 @@ def _check_for_bad_input_stream(infile, force_encoding = 1):
     
     lines = s.split("\n")
     if len(lines) > 3:
-        if lines[0] == "<Html>":
-            if lines[2].find("<h2>Error occured:") != 1:
-                s = re.findall(r"Error occured:([^<]+)", lines[2])[0]
+        if lines[0] == "<html>":
+            if lines[2].find("<h2>Error occurred:") != 1:
+                s = re.findall(r"Error occurred:([^<]+)", lines[2])[0]
                 s = urllib.unquote(s)
                 raise Datatypes.EUtilsError(s)
             raise Datatypes.EUtilsError("Unknown error:\n" +
